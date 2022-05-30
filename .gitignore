@@ -1,0 +1,6 @@
+**/*.toolbox/*
+!**/*.toolbox/.project
+!**/*.toolbox/*.launch
+**/*.toolbox/*SnapShot*
+**/*.tlaps
+CommunityModules/
