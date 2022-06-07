@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.lamport.tla.toolbox.tool.tlc.modelCheck">
+    <stringAttribute key="TLCCmdLineParameters" value=""/>
+    <stringAttribute key="alias" value=""/>
+    <intAttribute key="collectCoverage" value="0"/>
+    <stringAttribute key="configurationName" value="Model"/>
+    <booleanAttribute key="deferLiveness" value="false"/>
+    <intAttribute key="dfidDepth" value="100"/>
+    <booleanAttribute key="dfidMode" value="false"/>
+    <intAttribute key="distributedFPSetCount" value="0"/>
+    <stringAttribute key="distributedNetworkInterface" value="129.27.237.40"/>
+    <intAttribute key="distributedNodesCount" value="1"/>
+    <stringAttribute key="distributedTLC" value="off"/>
+    <stringAttribute key="distributedTLCVMArgs" value=""/>
+    <intAttribute key="fpBits" value="1"/>
+    <intAttribute key="fpIndex" value="87"/>
+    <booleanAttribute key="fpIndexRandom" value="true"/>
+    <intAttribute key="maxHeapSize" value="25"/>
+    <intAttribute key="maxSetSize" value="1000000"/>
+    <booleanAttribute key="mcMode" value="true"/>
+    <stringAttribute key="modelBehaviorInit" value="Init"/>
+    <stringAttribute key="modelBehaviorNext" value="Next"/>
+    <stringAttribute key="modelBehaviorSpec" value=""/>
+    <intAttribute key="modelBehaviorSpecType" value="0"/>
+    <stringAttribute key="modelBehaviorVars" value="conf"/>
+    <stringAttribute key="modelComments" value=""/>
+    <booleanAttribute key="modelCorrectnessCheckDeadlock" value="true"/>
+    <listAttribute key="modelCorrectnessInvariants"/>
+    <listAttribute key="modelCorrectnessProperties"/>
+    <intAttribute key="modelEditorOpenTabs" value="14"/>
+    <stringAttribute key="modelExpressionEval" value="\*Denotational!InternalI[100000][State(funEnv, varEnvs[2], asts.a7)]&#10;\*Bool(TRUE) \in (Naturals \cup Bools)&#10;\*ValidEncodingComp(EncodingNatComp) &#10;\*ValidEncoding(EncodingNat) &#10;\*\A nat \in DOMAIN EncodingNatComp.Encoding : PrintTAST(nat) /\ PrintTAST(EncodingNatComp.Encoding[nat])&#10;(*&#10;LET e == EncodingNat&#10;IN PrintT(e.Encoding) /\ &#10;   \A op \in e.Operators : \A args \in DOMAIN op.op :&#10;      /\ PrintT(args)&#10;      /\ PrintT(e.Encoding[CHOOSE arg \in Range(args) : TRUE])&#10;      /\ PrintT(Map(args, LAMBDA arg : e.Encoding[arg]))*)&#10;\*EncodingNat&#10;\*SeqN(Universe,2) \* &#10;\*EvalFunction(delta,&quot;cumsum&quot;)[&lt;&lt;List(&lt;&lt;&gt;&gt;)&gt;&gt;] &#10;\*PrintTAST_(asts[4])&#10;TestPropertyAppendReverse&#10;\*Cardinality(Lists)&#10;\*\A l \in Lists : PrintTAST(&quot;&quot;,l)&#10;\*\A s \in states : PrintTAST_(s.omega.l) /\ EvalSOS(s).ast = Bool(TRUE) /\ I(s) = Bool(TRUE1)"/>
+    <stringAttribute key="modelParameterActionConstraint" value=""/>
+    <listAttribute key="modelParameterConstants">
+        <listEntry value="IDs;;ids;0;0"/>
+    </listAttribute>
+    <stringAttribute key="modelParameterContraint" value=""/>
+    <listAttribute key="modelParameterDefinitions">
+        <listEntry value="States;;Any;0;0"/>
+        <listEntry value="ASTs;;Any;0;0"/>
+        <listEntry value="I;in:;I_(in);0;0"/>
+        <listEntry value="Seq;a:;Seq_(a);0;0"/>
+        <listEntry value="Lists;;Lists_;0;0"/>
+        <listEntry value="Naturals;;Naturals_;0;0"/>
+        <listEntry value="PrintMTAST;a:b:;PrintMTAST_(a,b);0;0"/>
+    </listAttribute>
+    <stringAttribute key="modelParameterModelValues" value="{}"/>
+    <stringAttribute key="modelParameterNewDefinitions" value=""/>
+    <intAttribute key="modelVersion" value="20191005"/>
+    <intAttribute key="numberOfWorkers" value="2"/>
+    <stringAttribute key="postCondition" value=""/>
+    <booleanAttribute key="recover" value="false"/>
+    <stringAttribute key="result.mail.address" value=""/>
+    <intAttribute key="simuAril" value="-1"/>
+    <intAttribute key="simuDepth" value="100"/>
+    <stringAttribute key="simuNumTraces" value="9223372036854775807"/>
+    <intAttribute key="simuSeed" value="-1"/>
+    <stringAttribute key="specName" value="ListNatExpTLC"/>
+    <stringAttribute key="tlcResourcesProfile" value="local custom"/>
+    <listAttribute key="traceExploreExpressions"/>
+    <stringAttribute key="view" value=""/>
+    <booleanAttribute key="visualizeStateGraph" value="false"/>
+</launchConfiguration>
